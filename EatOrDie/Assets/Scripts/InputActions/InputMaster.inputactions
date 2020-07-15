@@ -1,0 +1,112 @@
+{
+    "name": "InputMaster",
+    "maps": [
+        {
+            "name": "Play",
+            "id": "4af324d8-65c6-4e54-9f75-c8708a4d24b1",
+            "actions": [
+                {
+                    "name": "ExitGame",
+                    "type": "Button",
+                    "id": "fbbd1619-2290-43ba-b761-494e20a0265c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Movement",
+                    "type": "Button",
+                    "id": "70cf6ed4-5335-474e-95cd-e94d8f3c9073",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "de6d666c-f624-4bab-9d79-5cba22ee2602",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "LongJump",
+                    "type": "Button",
+                    "id": "12e96952-bccd-4805-b2cb-6710b36e9649",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "63ea0d59-36e2-45bd-bff3-4784658b0d01",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ExitGame",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Horizontal",
+                    "id": "3461cd8c-b9fc-41d9-9f95-51e7ea922521",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "74085212-cc8d-4b90-bef5-21e7d3b86bc0",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "ca65c793-554a-4efa-ae6a-267f608d38ff",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "c1f257e8-db6d-4a8a-986b-a8dee2d814f2",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "02b0b815-886f-49fa-b96a-9144255bee66",
+                    "path": "<Keyboard>/space",
+                    "interactions": "Hold(duration=0.35)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LongJump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
