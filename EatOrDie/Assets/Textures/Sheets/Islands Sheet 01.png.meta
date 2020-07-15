@@ -1,7 +1,37 @@
 fileFormatVersion: 2
 guid: 8eb719b00ed6cb144a05c6adbed323cf
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6243346116663842003
+    second: Islands Sheet 01_0
+  - first:
+      213: 2550082097789389390
+    second: Islands Sheet 01_1
+  - first:
+      213: 3105456680170083103
+    second: Islands Sheet 01_2
+  - first:
+      213: -1313984720165058485
+    second: Islands Sheet 01_3
+  - first:
+      213: 1767746605731933111
+    second: Islands Sheet 01_4
+  - first:
+      213: 6493970385421233696
+    second: Islands Sheet 01_5
+  - first:
+      213: -9209543924885179894
+    second: Islands Sheet 01_6
+  - first:
+      213: 1057175308956857030
+    second: Islands Sheet 01_7
+  - first:
+      213: 2098104505457171013
+    second: Islands Sheet 01_8
+  - first:
+      213: -7888155290843241473
+    second: Islands Sheet 01_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,7 +70,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -119,9 +149,231 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Islands Sheet 01_0
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 1038
+        width: 406
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2bef6a19cd2b59a0800000000000000
+      internalID: -6243346116663842003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Islands Sheet 01_1
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 1037
+        width: 67
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4ac1d23826b36320800000000000000
+      internalID: 2550082097789389390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Islands Sheet 01_2
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 494
+        width: 333
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f13d6eea56cc81b20800000000000000
+      internalID: 3105456680170083103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Islands Sheet 01_3
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 492
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b48454adbd9c3cde0800000000000000
+      internalID: -1313984720165058485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Islands Sheet 01_4
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 494
+        width: 511
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bbed870c2c488810800000000000000
+      internalID: 1767746605731933111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Islands Sheet 01_5
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 494
+        width: 333
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e60f4b8a73f1a50800000000000000
+      internalID: 6493970385421233696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Islands Sheet 01_6
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 0
+        width: 266
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a02bcd53890213080800000000000000
+      internalID: -9209543924885179894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Islands Sheet 01_7
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c2ffa3a757dbae00800000000000000
+      internalID: 1057175308956857030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Islands Sheet 01_8
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 0
+        width: 511
+        height: 476
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54adb657ee6fd1d10800000000000000
+      internalID: 2098104505457171013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Islands Sheet 01_9
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 0
+        width: 267
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff3ab246e84a78290800000000000000
+      internalID: -7888155290843241473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

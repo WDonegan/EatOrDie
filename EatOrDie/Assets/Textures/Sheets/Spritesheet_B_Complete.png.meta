@@ -1,7 +1,52 @@
 fileFormatVersion: 2
 guid: 67be9cb46e34cf445bb2316beb5c4557
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 588913307120451446
+    second: Walk_1B
+  - first:
+      213: -6344800171164324769
+    second: Walk_2B
+  - first:
+      213: -7431506807188529107
+    second: Walk_3B
+  - first:
+      213: -6464376371016393310
+    second: Lip_Upper
+  - first:
+      213: -1510067841941826916
+    second: Lip_Lower
+  - first:
+      213: -1027004170204083831
+    second: Tongue
+  - first:
+      213: 3768052673764354413
+    second: Jump_1B
+  - first:
+      213: 166220123498530167
+    second: Jump_2B
+  - first:
+      213: 4259812999173513012
+    second: Jump_3B
+  - first:
+      213: -3648733544558600467
+    second: Idle_1B
+  - first:
+      213: 540993904879877902
+    second: Idle_2B
+  - first:
+      213: 5973870389083938815
+    second: Idle_3B
+  - first:
+      213: 1205861855766495740
+    second: Attack_3B
+  - first:
+      213: -2857574602555020768
+    second: Attack_1B
+  - first:
+      213: 3185620132660269838
+    second: Attack_2B
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,12 +85,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 120
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -61,10 +106,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -73,10 +118,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -119,9 +164,336 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Walk_1B
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1537
+        width: 438
+        height: 511
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67f3a6a588d3c2800800000000000000
+      internalID: 588913307120451446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_2B
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 1540
+        width: 441
+        height: 508
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ca9ea4cddb2f7a0800000000000000
+      internalID: -6344800171164324769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_3B
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 1537
+        width: 438
+        height: 511
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2061a3ceebfdd890800000000000000
+      internalID: -7431506807188529107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lip_Upper
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 1955
+        width: 147
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ad9327b0fbe946a0800000000000000
+      internalID: -6464376371016393310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lip_Lower
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 1914
+        width: 145
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9211566c492b0be0800000000000000
+      internalID: -1510067841941826916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tongue
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 820
+        width: 105
+        height: 1187
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 989042406295fb1f0800000000000000
+      internalID: -1027004170204083831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_1B
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1025
+        width: 436
+        height: 444
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d696faa51ffca4430800000000000000
+      internalID: 3768052673764354413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_2B
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 1101
+        width: 454
+        height: 436
+      alignment: 9
+      pivot: {x: 0.5, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 775c6a752588e4200800000000000000
+      internalID: 166220123498530167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_3B
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 1025
+        width: 475
+        height: 444
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f14517a55ed1b30800000000000000
+      internalID: 4259812999173513012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_1B
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 513
+        width: 438
+        height: 511
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dee588c4c281d5dc0800000000000000
+      internalID: -3648733544558600467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_2B
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 513
+        width: 438
+        height: 511
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0f3406171ff18700800000000000000
+      internalID: 540993904879877902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_3B
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 517
+        width: 438
+        height: 509
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff929bc77377e250800000000000000
+      internalID: 5973870389083938815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_3B
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 5
+        width: 434
+        height: 511
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf1c72908f41cb010800000000000000
+      internalID: 1205861855766495740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_1B
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 5
+        width: 434
+        height: 507
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02aa78ff90bd758d0800000000000000
+      internalID: -2857574602555020768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_2B
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 5
+        width: 432
+        height: 505
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e035c8ce1a8953c20800000000000000
+      internalID: 3185620132660269838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

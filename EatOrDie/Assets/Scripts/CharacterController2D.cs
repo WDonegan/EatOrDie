@@ -40,11 +40,11 @@ namespace EatOrDie
         private void OnDisable() => controls.Disable();
         private void Start()
         {
-            controls.Play.Horizontal.performed += ctx => iHorizontal = ctx.ReadValue<float>() * 5f;
+            controls.Play.Movement.performed += ctx => iHorizontal = ctx.ReadValue<float>() * 5f;
             
             controls.Play.Jump.performed += ctx => rigidBody2D.AddForce(new Vector2(0, jumpForce));
             
-            controls.Play.JumpLong.performed += ctx => rigidBody2D.AddForce(new Vector2(0, jumpForce * 0.3f));
+            controls.Play.LongJump.performed += ctx => rigidBody2D.AddForce(new Vector2(0, jumpForce * 0.3f));
 
             controls.Play.ExitGame.performed += ctx => Application.Quit();
         }
