@@ -1,0 +1,106 @@
+# =============== #
+# Unity generated #
+# =============== #
+[Tt]emp/
+[Oo]bj/
+[Bb]uild
+/[Bb]uilds/
+/[Ll]ibrary/
+sysinfo.txt
+*.stackdump
+/Assets/AssetStoreTools*
+*.apk
+
+/EatOrDie/[Tt]emp/
+/EatOrDie/[Oo]bj/
+/EatOrDie/[Bb]uild
+/EatOrDie/[Bb]uilds/
+/EatOrDie/[Ll]ibrary/
+/EatOrDie/sysinfo.txt
+/EatOrDie/*.stackdump
+/EatOrDie/Assets/AssetStoreTools*
+/EatOrDie/*.apk
+/EatOrDie/.idea/
+/EatOrDie/.idea.EatOrDie/
+/EatOrDie/idea.EatOrDie/
+/EatOrDie/idea/
+/EatOrDie/[Id]ea/
+/EatOrDie/[Id]ea/.idea.EatOrDie/
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+[Ee]xported[Oo]bj/
+.vs/
+/*.userprefs
+/*.csproj
+/*.pidb
+*.pidb.meta
+/*.suo
+/*.sln*
+/*.user
+/*.unityproj
+/*.booproj
+.consulo/
+/*.tmp
+/*.svd
+
+
+/EatOrDie/[Ee]xported[Oo]bj/
+/EatOrDie/.vs/
+/EatOrDie/*.userprefs
+/EatOrDie/*.csproj
+/EatOrDie/*.pidb
+/EatOrDie*.pidb.meta
+/EatOrDie/*.suo
+/EatOrDie/*.sln*
+/EatOrDie/*.user
+/EatOrDie/*.unityproj
+/EatOrDie/*.booproj
+/EatOrDie.consulo/
+/EatOrDie/*.tmp
+/EatOrDie/*.svd
+ 
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store*
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+[Tt]humbs.db
+[Dd]esktop.ini
+Corridor/Library/ShaderCache/
+Corridor/Library/metadata/
+
+/EatOrDie/.DS_Store*
+/EatOrDie/._*
+/EatOrDie/.Spotlight-V100
+/EatOrDie/.Trashes
+/EatOrDie/Icon?
+/EatOrDie/ehthumbs.db
+/EatOrDie/[Tt]humbs.db
+/EatOrDie/[Dd]esktop.ini
+/EatOrDie/Corridor/Library/ShaderCache/
+/EatOrDie/Corridor/Library/metadata/
+
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+private/
+
+/EatOrDie/.DS_Store
+/EatOrDie/.env.local
+/EatOrDie/.env.development.local
+/EatOrDie/.env.test.local
+/EatOrDie/.env.production.local
+/EatOrDie/npm-debug.log*
+/EatOrDie/yarn-debug.log*
+/EatOrDie/yarn-error.log*
+/EatOrDie/private/
