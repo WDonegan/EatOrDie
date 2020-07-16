@@ -4,14 +4,29 @@
 [Tt]emp/
 [Oo]bj/
 [Bb]uild
+[Ll]ogs
+[Pp]acages
+[Pp]roject[Ss]ettings
 /[Bb]uilds/
 /[Ll]ibrary/
+/[Ll]ogs/
+/[Pp]acages/
+/[Pp]roject[Ss]ettings/
 sysinfo.txt
 *.stackdump
 /Assets/AssetStoreTools*
 *.apk
 
-/EatOrDie/[Tt]emp/
+
+/EatOrDie/Assets/[Tt]emp/
+/EatOrDie/Assets/Ss]cripts/
+/EatOrDie/Assets/[Ss]ettings/
+/EatOrDie/Assets/[Ss]cenes/
+/EatOrDie/Assets/[Mm]aterials/
+/EatOrDie/Assets/[Aa]nimations/
+/EatOrDie/[Ll]ogs/
+/EatOrDie/[Pp]ackages/
+/EatOrDie/[Pp]roject[Ss]ettings/
 /EatOrDie/[Oo]bj/
 /EatOrDie/[Bb]uild
 /EatOrDie/[Bb]uilds/
@@ -43,6 +58,7 @@ sysinfo.txt
 .consulo/
 /*.tmp
 /*.svd
+/*.meta
 
 
 /EatOrDie/[Ee]xported[Oo]bj/
@@ -59,6 +75,7 @@ sysinfo.txt
 /EatOrDie.consulo/
 /EatOrDie/*.tmp
 /EatOrDie/*.svd
+/EatOrDie/*.meta
  
 # ============ #
 # OS generated #
