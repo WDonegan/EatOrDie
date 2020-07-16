@@ -15,9 +15,9 @@
                 },
                 {
                     "name": "Movement",
-                    "type": "Button",
+                    "type": "PassThrough",
                     "id": "70cf6ed4-5335-474e-95cd-e94d8f3c9073",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "Dpad",
                     "processors": "",
                     "interactions": ""
                 },
