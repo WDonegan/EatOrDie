@@ -92,6 +92,7 @@ Corridor/Library/ShaderCache/
 Corridor/Library/metadata/
 
 /EatOrDie/.DS_Store*
+/EatOrDie/.meta*
 /EatOrDie/._*
 /EatOrDie/.Spotlight-V100
 /EatOrDie/.Trashes
@@ -103,6 +104,7 @@ Corridor/Library/metadata/
 /EatOrDie/Corridor/Library/metadata/
 
 .DS_Store
+.meta
 .env.local
 .env.development.local
 .env.test.local
@@ -113,6 +115,7 @@ yarn-error.log*
 private/
 
 /EatOrDie/.DS_Store
+EatOrDie/.meta
 /EatOrDie/.env.local
 /EatOrDie/.env.development.local
 /EatOrDie/.env.test.local
@@ -121,3 +124,4 @@ private/
 /EatOrDie/yarn-debug.log*
 /EatOrDie/yarn-error.log*
 /EatOrDie/private/
+EatOrDie/Assets/.meta
