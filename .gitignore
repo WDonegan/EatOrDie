@@ -4,29 +4,14 @@
 [Tt]emp/
 [Oo]bj/
 [Bb]uild
-[Ll]ogs
-[Pp]acages
-[Pp]roject[Ss]ettings
 /[Bb]uilds/
 /[Ll]ibrary/
-/[Ll]ogs/
-/[Pp]acages/
-/[Pp]roject[Ss]ettings/
 sysinfo.txt
 *.stackdump
 /Assets/AssetStoreTools*
 *.apk
 
-
-/EatOrDie/Assets/[Tt]emp/
-/EatOrDie/Assets/[Ss]cripts/
-/EatOrDie/Assets/[Ss]ettings/
-/EatOrDie/Assets/[Ss]cenes/
-/EatOrDie/Assets/[Mm]aterials/
-/EatOrDie/Assets/[Aa]nimations/
-/EatOrDie/[Ll]ogs/
-/EatOrDie/[Pp]ackages/
-/EatOrDie/[Pp]roject[Ss]ettings/
+/EatOrDie/[Tt]emp/
 /EatOrDie/[Oo]bj/
 /EatOrDie/[Bb]uild
 /EatOrDie/[Bb]uilds/
@@ -58,7 +43,6 @@ sysinfo.txt
 .consulo/
 /*.tmp
 /*.svd
-/*.meta
 
 
 /EatOrDie/[Ee]xported[Oo]bj/
@@ -75,7 +59,6 @@ sysinfo.txt
 /EatOrDie.consulo/
 /EatOrDie/*.tmp
 /EatOrDie/*.svd
-/EatOrDie/*.meta
  
 # ============ #
 # OS generated #
@@ -92,7 +75,6 @@ Corridor/Library/ShaderCache/
 Corridor/Library/metadata/
 
 /EatOrDie/.DS_Store*
-/EatOrDie/.meta*
 /EatOrDie/._*
 /EatOrDie/.Spotlight-V100
 /EatOrDie/.Trashes
@@ -104,7 +86,6 @@ Corridor/Library/metadata/
 /EatOrDie/Corridor/Library/metadata/
 
 .DS_Store
-.meta
 .env.local
 .env.development.local
 .env.test.local
@@ -115,7 +96,6 @@ yarn-error.log*
 private/
 
 /EatOrDie/.DS_Store
-EatOrDie/.meta
 /EatOrDie/.env.local
 /EatOrDie/.env.development.local
 /EatOrDie/.env.test.local
@@ -124,4 +104,3 @@ EatOrDie/.meta
 /EatOrDie/yarn-debug.log*
 /EatOrDie/yarn-error.log*
 /EatOrDie/private/
-EatOrDie/Assets/.meta
