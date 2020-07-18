@@ -104,3 +104,5 @@ private/
 /EatOrDie/yarn-debug.log*
 /EatOrDie/yarn-error.log*
 /EatOrDie/private/
+EatOrDie/Assets/Textures/level01_tilesheet.png
+EatOrDie/Assets/Textures/level01_tilesheet.png.meta
