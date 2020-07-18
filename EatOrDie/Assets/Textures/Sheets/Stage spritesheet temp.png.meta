@@ -1,7 +1,67 @@
 fileFormatVersion: 2
 guid: 5ab0faecb84d6184f803d7a47df99b0a
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3466486879758397104
+    second: Stage spritesheet temp_0
+  - first:
+      213: -1067254110707605870
+    second: Stage spritesheet temp_1
+  - first:
+      213: -7974105975851184695
+    second: Stage spritesheet temp_2
+  - first:
+      213: 4947108614153918482
+    second: Stage spritesheet temp_3
+  - first:
+      213: 9189593936147446607
+    second: Stage spritesheet temp_4
+  - first:
+      213: -3784561816086956158
+    second: Stage spritesheet temp_5
+  - first:
+      213: -3822030098356826907
+    second: Stage spritesheet temp_6
+  - first:
+      213: 4855849267356041725
+    second: Stage spritesheet temp_7
+  - first:
+      213: 7621008250342409236
+    second: Stage spritesheet temp_8
+  - first:
+      213: 3289754790226610543
+    second: Stage spritesheet temp_9
+  - first:
+      213: 9090042190163503439
+    second: Stage spritesheet temp_10
+  - first:
+      213: 1672494472432290455
+    second: Stage spritesheet temp_11
+  - first:
+      213: 6990969539479303134
+    second: Stage spritesheet temp_12
+  - first:
+      213: -8553575550992344605
+    second: Stage spritesheet temp_13
+  - first:
+      213: -9123329782146557236
+    second: Stage spritesheet temp_14
+  - first:
+      213: 8065452552105379213
+    second: Stage spritesheet temp_15
+  - first:
+      213: -34811413158392124
+    second: Stage spritesheet temp_16
+  - first:
+      213: -4279373288630599747
+    second: Stage spritesheet temp_17
+  - first:
+      213: 6472147080830486698
+    second: Stage spritesheet temp_18
+  - first:
+      213: -9162568733996950660
+    second: Stage spritesheet temp_19
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -31,7 +91,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 2
     mipBias: -100
     wrapU: 1
@@ -40,13 +100,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 1702}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -64,7 +124,7 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -76,7 +136,7 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -88,7 +148,7 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -119,9 +179,210 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Stage spritesheet temp_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2048
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 051d2719c8094efc0800000000000000
+      internalID: -3466486879758397104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage spritesheet temp_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 902
+        width: 466
+        height: 626
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e92367a0a5031f0800000000000000
+      internalID: -1067254110707605870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage spritesheet temp_2
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 868
+        width: 509
+        height: 681
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd02141dd8465190800000000000000
+      internalID: -7974105975851184695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage spritesheet temp_3
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 1565
+        width: 501
+        height: 377
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2185bebd219a7a440800000000000000
+      internalID: 4947108614153918482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage spritesheet temp_4
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 932
+        width: 1109
+        height: 1068
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4bf6221ffef78f70800000000000000
+      internalID: 9189593936147446607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage spritesheet temp_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 539
+        width: 2012
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28731a964198a7bc0800000000000000
+      internalID: -3784561816086956158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage spritesheet temp_6
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 352
+        width: 448
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec079220eb65fac0800000000000000
+      internalID: -3822030098356826907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage spritesheet temp_7
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 355
+        width: 428
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df109976e21736340800000000000000
+      internalID: 4855849267356041725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage spritesheet temp_8
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 343
+        width: 456
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4140bf730a243c960800000000000000
+      internalID: 7621008250342409236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
