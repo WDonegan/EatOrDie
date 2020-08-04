@@ -27,9 +27,9 @@ public class @InputMaster : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Movement"",
+                    ""name"": ""Move"",
                     ""type"": ""PassThrough"",
-                    ""id"": ""70cf6ed4-5335-474e-95cd-e94d8f3c9073"",
+                    ""id"": ""632f663d-7616-429e-b621-2adb9a279f66"",
                     ""expectedControlType"": ""Dpad"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -37,15 +37,15 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 {
                     ""name"": ""Jump"",
                     ""type"": ""Button"",
-                    ""id"": ""de6d666c-f624-4bab-9d79-5cba22ee2602"",
+                    ""id"": ""6cd658fe-84c8-4055-a441-4b6e67dceb61"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""LongJump"",
+                    ""name"": ""Duck"",
                     ""type"": ""Button"",
-                    ""id"": ""12e96952-bccd-4805-b2cb-6710b36e9649"",
+                    ""id"": ""bc33c352-859a-48ea-93a2-cca51f56419d"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -64,42 +64,9 @@ public class @InputMaster : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""Horizontal"",
-                    ""id"": ""3461cd8c-b9fc-41d9-9f95-51e7ea922521"",
-                    ""path"": ""1DAxis"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Movement"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""negative"",
-                    ""id"": ""74085212-cc8d-4b90-bef5-21e7d3b86bc0"",
-                    ""path"": ""<Keyboard>/a"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Movement"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""positive"",
-                    ""id"": ""ca65c793-554a-4efa-ae6a-267f608d38ff"",
-                    ""path"": ""<Keyboard>/d"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Movement"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
                     ""name"": """",
-                    ""id"": ""c1f257e8-db6d-4a8a-986b-a8dee2d814f2"",
-                    ""path"": ""<Keyboard>/space"",
+                    ""id"": ""5989febf-9eba-4f3b-abbd-add166904bf6"",
+                    ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -109,12 +76,110 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""02b0b815-886f-49fa-b96a-9144255bee66"",
-                    ""path"": ""<Keyboard>/space"",
-                    ""interactions"": ""Hold(duration=0.35)"",
+                    ""id"": ""c36a048b-516f-4ef7-9c61-79c54b2e2b06"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""LongJump"",
+                    ""action"": ""Duck"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Horizontal"",
+                    ""id"": ""f844eaee-5b40-40dd-874f-e9e2c7269514"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""1e5065c0-9bda-4f76-8128-a52b5cb9b0e6"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""1fc9bc81-31b1-4e39-8f92-94e870adf55b"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                }
+            ]
+        },
+        {
+            ""name"": ""Touch"",
+            ""id"": ""29cf521e-8873-48e8-acc4-1df5cc9a726f"",
+            ""actions"": [
+                {
+                    ""name"": ""Primary"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""fe320294-a2a5-4f9b-a3fb-2114d48a7638"",
+                    ""expectedControlType"": ""Touch"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""LeftMouse"",
+                    ""type"": ""Button"",
+                    ""id"": ""bbb9ff33-df38-4fd4-bc7c-48dcc6abfee4"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""MousePosition"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""3a1cd2c0-9a33-48d9-9523-be76012a03e7"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""3ed4d460-5154-4004-94f8-0a8ce42cb444"",
+                    ""path"": ""<Touchscreen>/primaryTouch"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Primary"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""cec58594-5742-4eab-976f-7df005799ad7"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LeftMouse"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""02d30129-e469-4252-bb82-c005b95a6790"",
+                    ""path"": ""<Mouse>/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MousePosition"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -126,9 +191,14 @@ public class @InputMaster : IInputActionCollection, IDisposable
         // Play
         m_Play = asset.FindActionMap("Play", throwIfNotFound: true);
         m_Play_ExitGame = m_Play.FindAction("ExitGame", throwIfNotFound: true);
-        m_Play_Movement = m_Play.FindAction("Movement", throwIfNotFound: true);
+        m_Play_Move = m_Play.FindAction("Move", throwIfNotFound: true);
         m_Play_Jump = m_Play.FindAction("Jump", throwIfNotFound: true);
-        m_Play_LongJump = m_Play.FindAction("LongJump", throwIfNotFound: true);
+        m_Play_Duck = m_Play.FindAction("Duck", throwIfNotFound: true);
+        // Touch
+        m_Touch = asset.FindActionMap("Touch", throwIfNotFound: true);
+        m_Touch_Primary = m_Touch.FindAction("Primary", throwIfNotFound: true);
+        m_Touch_LeftMouse = m_Touch.FindAction("LeftMouse", throwIfNotFound: true);
+        m_Touch_MousePosition = m_Touch.FindAction("MousePosition", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -179,17 +249,17 @@ public class @InputMaster : IInputActionCollection, IDisposable
     private readonly InputActionMap m_Play;
     private IPlayActions m_PlayActionsCallbackInterface;
     private readonly InputAction m_Play_ExitGame;
-    private readonly InputAction m_Play_Movement;
+    private readonly InputAction m_Play_Move;
     private readonly InputAction m_Play_Jump;
-    private readonly InputAction m_Play_LongJump;
+    private readonly InputAction m_Play_Duck;
     public struct PlayActions
     {
         private @InputMaster m_Wrapper;
         public PlayActions(@InputMaster wrapper) { m_Wrapper = wrapper; }
         public InputAction @ExitGame => m_Wrapper.m_Play_ExitGame;
-        public InputAction @Movement => m_Wrapper.m_Play_Movement;
+        public InputAction @Move => m_Wrapper.m_Play_Move;
         public InputAction @Jump => m_Wrapper.m_Play_Jump;
-        public InputAction @LongJump => m_Wrapper.m_Play_LongJump;
+        public InputAction @Duck => m_Wrapper.m_Play_Duck;
         public InputActionMap Get() { return m_Wrapper.m_Play; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -202,15 +272,15 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 @ExitGame.started -= m_Wrapper.m_PlayActionsCallbackInterface.OnExitGame;
                 @ExitGame.performed -= m_Wrapper.m_PlayActionsCallbackInterface.OnExitGame;
                 @ExitGame.canceled -= m_Wrapper.m_PlayActionsCallbackInterface.OnExitGame;
-                @Movement.started -= m_Wrapper.m_PlayActionsCallbackInterface.OnMovement;
-                @Movement.performed -= m_Wrapper.m_PlayActionsCallbackInterface.OnMovement;
-                @Movement.canceled -= m_Wrapper.m_PlayActionsCallbackInterface.OnMovement;
+                @Move.started -= m_Wrapper.m_PlayActionsCallbackInterface.OnMove;
+                @Move.performed -= m_Wrapper.m_PlayActionsCallbackInterface.OnMove;
+                @Move.canceled -= m_Wrapper.m_PlayActionsCallbackInterface.OnMove;
                 @Jump.started -= m_Wrapper.m_PlayActionsCallbackInterface.OnJump;
                 @Jump.performed -= m_Wrapper.m_PlayActionsCallbackInterface.OnJump;
                 @Jump.canceled -= m_Wrapper.m_PlayActionsCallbackInterface.OnJump;
-                @LongJump.started -= m_Wrapper.m_PlayActionsCallbackInterface.OnLongJump;
-                @LongJump.performed -= m_Wrapper.m_PlayActionsCallbackInterface.OnLongJump;
-                @LongJump.canceled -= m_Wrapper.m_PlayActionsCallbackInterface.OnLongJump;
+                @Duck.started -= m_Wrapper.m_PlayActionsCallbackInterface.OnDuck;
+                @Duck.performed -= m_Wrapper.m_PlayActionsCallbackInterface.OnDuck;
+                @Duck.canceled -= m_Wrapper.m_PlayActionsCallbackInterface.OnDuck;
             }
             m_Wrapper.m_PlayActionsCallbackInterface = instance;
             if (instance != null)
@@ -218,24 +288,79 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 @ExitGame.started += instance.OnExitGame;
                 @ExitGame.performed += instance.OnExitGame;
                 @ExitGame.canceled += instance.OnExitGame;
-                @Movement.started += instance.OnMovement;
-                @Movement.performed += instance.OnMovement;
-                @Movement.canceled += instance.OnMovement;
+                @Move.started += instance.OnMove;
+                @Move.performed += instance.OnMove;
+                @Move.canceled += instance.OnMove;
                 @Jump.started += instance.OnJump;
                 @Jump.performed += instance.OnJump;
                 @Jump.canceled += instance.OnJump;
-                @LongJump.started += instance.OnLongJump;
-                @LongJump.performed += instance.OnLongJump;
-                @LongJump.canceled += instance.OnLongJump;
+                @Duck.started += instance.OnDuck;
+                @Duck.performed += instance.OnDuck;
+                @Duck.canceled += instance.OnDuck;
             }
         }
     }
     public PlayActions @Play => new PlayActions(this);
+
+    // Touch
+    private readonly InputActionMap m_Touch;
+    private ITouchActions m_TouchActionsCallbackInterface;
+    private readonly InputAction m_Touch_Primary;
+    private readonly InputAction m_Touch_LeftMouse;
+    private readonly InputAction m_Touch_MousePosition;
+    public struct TouchActions
+    {
+        private @InputMaster m_Wrapper;
+        public TouchActions(@InputMaster wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Primary => m_Wrapper.m_Touch_Primary;
+        public InputAction @LeftMouse => m_Wrapper.m_Touch_LeftMouse;
+        public InputAction @MousePosition => m_Wrapper.m_Touch_MousePosition;
+        public InputActionMap Get() { return m_Wrapper.m_Touch; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(TouchActions set) { return set.Get(); }
+        public void SetCallbacks(ITouchActions instance)
+        {
+            if (m_Wrapper.m_TouchActionsCallbackInterface != null)
+            {
+                @Primary.started -= m_Wrapper.m_TouchActionsCallbackInterface.OnPrimary;
+                @Primary.performed -= m_Wrapper.m_TouchActionsCallbackInterface.OnPrimary;
+                @Primary.canceled -= m_Wrapper.m_TouchActionsCallbackInterface.OnPrimary;
+                @LeftMouse.started -= m_Wrapper.m_TouchActionsCallbackInterface.OnLeftMouse;
+                @LeftMouse.performed -= m_Wrapper.m_TouchActionsCallbackInterface.OnLeftMouse;
+                @LeftMouse.canceled -= m_Wrapper.m_TouchActionsCallbackInterface.OnLeftMouse;
+                @MousePosition.started -= m_Wrapper.m_TouchActionsCallbackInterface.OnMousePosition;
+                @MousePosition.performed -= m_Wrapper.m_TouchActionsCallbackInterface.OnMousePosition;
+                @MousePosition.canceled -= m_Wrapper.m_TouchActionsCallbackInterface.OnMousePosition;
+            }
+            m_Wrapper.m_TouchActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Primary.started += instance.OnPrimary;
+                @Primary.performed += instance.OnPrimary;
+                @Primary.canceled += instance.OnPrimary;
+                @LeftMouse.started += instance.OnLeftMouse;
+                @LeftMouse.performed += instance.OnLeftMouse;
+                @LeftMouse.canceled += instance.OnLeftMouse;
+                @MousePosition.started += instance.OnMousePosition;
+                @MousePosition.performed += instance.OnMousePosition;
+                @MousePosition.canceled += instance.OnMousePosition;
+            }
+        }
+    }
+    public TouchActions @Touch => new TouchActions(this);
     public interface IPlayActions
     {
         void OnExitGame(InputAction.CallbackContext context);
-        void OnMovement(InputAction.CallbackContext context);
+        void OnMove(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
-        void OnLongJump(InputAction.CallbackContext context);
+        void OnDuck(InputAction.CallbackContext context);
+    }
+    public interface ITouchActions
+    {
+        void OnPrimary(InputAction.CallbackContext context);
+        void OnLeftMouse(InputAction.CallbackContext context);
+        void OnMousePosition(InputAction.CallbackContext context);
     }
 }

@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - TC-Jump
+  - TC-Backward
+  - TC-Forward
+  - TC-Duck
+  - TC-Deadzone
   layers:
   - Default
   - TransparentFX
@@ -35,7 +40,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - TouchZone
   - 
   m_SortingLayers:
   - name: Default
