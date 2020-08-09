@@ -70,7 +70,7 @@ namespace EatOrDie
 
         #endregion
         
-        private void FixedUpdate()
+        private void Update()
         {
             GroundCheck();
             
