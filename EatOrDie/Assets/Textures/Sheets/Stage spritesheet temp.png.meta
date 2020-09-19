@@ -4,31 +4,31 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -3466486879758397104
-    second: Stage spritesheet temp_0
+    second: Cloud
   - first:
       213: -1067254110707605870
-    second: Stage spritesheet temp_1
+    second: Tree_Massive
   - first:
       213: -7974105975851184695
-    second: Stage spritesheet temp_2
+    second: Tree_Small
   - first:
       213: 4947108614153918482
-    second: Stage spritesheet temp_3
+    second: Tree_Large
   - first:
       213: 9189593936147446607
-    second: Stage spritesheet temp_4
+    second: Land
   - first:
       213: -3784561816086956158
-    second: Stage spritesheet temp_5
+    second: Bush_1
   - first:
       213: -3822030098356826907
-    second: Stage spritesheet temp_6
+    second: Bush_2
   - first:
       213: 4855849267356041725
-    second: Stage spritesheet temp_7
+    second: Bush_3
   - first:
       213: 7621008250342409236
-    second: Stage spritesheet temp_8
+    second: Grass_1
   - first:
       213: 3289754790226610543
     second: Stage spritesheet temp_9
@@ -40,10 +40,10 @@ TextureImporter:
     second: Stage spritesheet temp_11
   - first:
       213: 6990969539479303134
-    second: Stage spritesheet temp_12
+    second: Grass_2
   - first:
       213: -8553575550992344605
-    second: Stage spritesheet temp_13
+    second: Grass_3
   - first:
       213: -9123329782146557236
     second: Stage spritesheet temp_14
@@ -55,7 +55,7 @@ TextureImporter:
     second: Stage spritesheet temp_16
   - first:
       213: -4279373288630599747
-    second: Stage spritesheet temp_17
+    second: Grass_4
   - first:
       213: 6472147080830486698
     second: Stage spritesheet temp_18
@@ -80,7 +80,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
@@ -91,7 +91,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 2
     aniso: 2
     mipBias: -100
     wrapU: 1
@@ -106,7 +106,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 1702}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -121,10 +121,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
-    resizeAlgorithm: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -133,10 +133,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 8192
-    resizeAlgorithm: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -148,7 +148,7 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -157,10 +157,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 8192
-    resizeAlgorithm: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -181,10 +181,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
-    maxTextureSize: 8192
-    resizeAlgorithm: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -195,13 +195,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Stage spritesheet temp_0
+      name: Cloud
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2048
-        height: 339
+        x: 219
+        y: 1587
+        width: 428
+        height: 303
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,15 +216,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stage spritesheet temp_1
+      name: Tree_Massive
       rect:
         serializedVersion: 2
-        x: 0
-        y: 902
-        width: 466
-        height: 626
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 882
+        y: 991
+        width: 1032
+        height: 968
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -237,15 +237,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stage spritesheet temp_2
+      name: Tree_Small
       rect:
         serializedVersion: 2
-        x: 473
-        y: 868
-        width: 509
-        height: 681
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 78
+        y: 952
+        width: 352
+        height: 521
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -258,15 +258,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stage spritesheet temp_3
+      name: Tree_Large
       rect:
         serializedVersion: 2
-        x: 151
-        y: 1565
-        width: 501
-        height: 377
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 482
+        y: 893
+        width: 451
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -279,13 +279,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stage spritesheet temp_4
+      name: Land
       rect:
         serializedVersion: 2
-        x: 880
-        y: 932
-        width: 1109
-        height: 1068
+        x: 34
+        y: 569
+        width: 1920
+        height: 295
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,15 +300,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stage spritesheet temp_5
+      name: Bush_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 539
-        width: 2012
-        height: 342
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 82
+        y: 355
+        width: 406
+        height: 168
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -321,15 +321,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stage spritesheet temp_6
+      name: Bush_2
       rect:
         serializedVersion: 2
-        x: 952
-        y: 352
-        width: 448
-        height: 217
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 526
+        y: 355
+        width: 406
+        height: 168
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -342,15 +342,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stage spritesheet temp_7
+      name: Bush_3
       rect:
         serializedVersion: 2
-        x: 512
+        x: 970
         y: 355
-        width: 428
-        height: 209
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 406
+        height: 168
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -363,15 +363,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stage spritesheet temp_8
+      name: Grass_1
       rect:
         serializedVersion: 2
-        x: 45
-        y: 343
-        width: 456
-        height: 196
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 30
+        y: 40
+        width: 394
+        height: 264
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -379,6 +379,69 @@ TextureImporter:
       bones: []
       spriteID: 4140bf730a243c960800000000000000
       internalID: 7621008250342409236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_2
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 84
+        width: 414
+        height: 214
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed37d34a1c9e40160800000000000000
+      internalID: 6990969539479303134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_3
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 87
+        width: 347
+        height: 194
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e992abea589b4980800000000000000
+      internalID: -8553575550992344605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_4
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 91
+        width: 362
+        height: 238
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbfb0e5caac9c94c0800000000000000
+      internalID: -4279373288630599747
       vertices: []
       indices: 
       edges: []

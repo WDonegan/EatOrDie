@@ -1,7 +1,103 @@
 fileFormatVersion: 2
-guid: e7e0a3d70013824408aa83ec58073303
+guid: 700b6d4345fb32545a8769b876990410
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -443383433971507015
+    second: Duck_1A
+  - first:
+      213: -535293606846087319
+    second: Duck_2A
+  - first:
+      213: 9027529197170993613
+    second: Duck_3A
+  - first:
+      213: -6544402855935428143
+    second: Duck_1B
+  - first:
+      213: 7861062753794690194
+    second: Duck_2B
+  - first:
+      213: 8073654055131725944
+    second: Duck_3B
+  - first:
+      213: 1699891100260196688
+    second: Duck_1C
+  - first:
+      213: 56072062410133766
+    second: Duck_2C
+  - first:
+      213: 4918993124484258269
+    second: duck_3C
+  - first:
+      213: 3509301659113965710
+    second: Ducking_Skinny_A
+  - first:
+      213: -129624202662940813
+    second: Ducking_Skinny_B
+  - first:
+      213: -4293237369292508117
+    second: Ducking_Skinny_C
+  - first:
+      213: -1014323679274158370
+    second: Spritesheet ducking animation_3
+  - first:
+      213: -7594168541535734503
+    second: Ducking_Normal_A
+  - first:
+      213: -1456650080241782173
+    second: Ducking_Normal_B
+  - first:
+      213: -7809610973842892008
+    second: Ducking_Normal_C
+  - first:
+      213: 5301305901312742208
+    second: Spritesheet ducking animation_7
+  - first:
+      213: -9194950428989890862
+    second: Ducking_Fat_A
+  - first:
+      213: 3233426187378044893
+    second: Ducking_Fat_B
+  - first:
+      213: -1987635959290733695
+    second: Ducking_Fat_C
+  - first:
+      213: 7574718785937892813
+    second: Spritesheet ducking animation_11
+  - first:
+      213: -443383433971507015
+    second: Ducking_Skinny_A
+  - first:
+      213: -535293606846087319
+    second: Ducking_Skinny_B
+  - first:
+      213: 9027529197170993613
+    second: Ducking_Skinny_C
+  - first:
+      213: -6544402855935428143
+    second: Spritesheet ducking animation_3
+  - first:
+      213: 7861062753794690194
+    second: Ducking_Normal_A
+  - first:
+      213: 8073654055131725944
+    second: Ducking_Normal_B
+  - first:
+      213: 1699891100260196688
+    second: Ducking_Normal_C
+  - first:
+      213: 56072062410133766
+    second: Spritesheet ducking animation_7
+  - first:
+      213: 4918993124484258269
+    second: Ducking_Fat_A
+  - first:
+      213: 4377729984505560792
+    second: Ducking_Fat_B
+  - first:
+      213: -9166301758307995620
+    second: Ducking_Fat_C
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -20,7 +116,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
@@ -31,7 +127,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 2
     aniso: 2
     mipBias: -100
     wrapU: 1
@@ -40,14 +136,14 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 120
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -61,10 +157,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
-    resizeAlgorithm: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -73,10 +169,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 8192
-    resizeAlgorithm: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,10 +193,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 8192
-    resizeAlgorithm: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -119,9 +215,210 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Ducking_Skinny_A
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1540
+        width: 433
+        height: 498
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b0e5dead19c8d9f0800000000000000
+      internalID: -443383433971507015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ducking_Skinny_B
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 1540
+        width: 432
+        height: 497
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96fb669fc414298f0800000000000000
+      internalID: -535293606846087319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ducking_Skinny_C
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1538
+        width: 434
+        height: 498
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc928d499f9384d70800000000000000
+      internalID: 9027529197170993613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ducking_Normal_A
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1028
+        width: 507
+        height: 475
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c8cf4ccea181d60800000000000000
+      internalID: 7861062753794690194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ducking_Normal_B
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 1030
+        width: 506
+        height: 478
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 870c48b46916b0070800000000000000
+      internalID: 8073654055131725944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ducking_Normal_C
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 1032
+        width: 508
+        height: 474
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0516bd303f9379710800000000000000
+      internalID: 1699891100260196688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ducking_Fat_A
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 514
+        width: 503
+        height: 391
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd9197d4f26c34440800000000000000
+      internalID: 4918993124484258269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ducking_Fat_B
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 514
+        width: 504
+        height: 396
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8deb7090a32d0cc30800000000000000
+      internalID: 4377729984505560792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ducking_Fat_C
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 519
+        width: 503
+        height: 393
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c107300bd11cac080800000000000000
+      internalID: -9166301758307995620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
