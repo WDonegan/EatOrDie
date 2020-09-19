@@ -4,6 +4,7 @@ using System.Reflection;
 using EatOrDie.InputActions;
 using UnityEngine;
 using UnityEngine.InputSystem.EnhancedTouch;
+using UnityEngine.InputSystem.Interactions;
 using UnityEngine.InputSystem.Utilities;
 using Touch = UnityEngine.InputSystem.EnhancedTouch.Touch;
 
@@ -63,7 +64,7 @@ namespace EatOrDie
         private CustomTouchState tState, primaryTState, secondTState;
         private ReadOnlyArray<Finger> activeFingers;
         private Vector3 primaryPosition, secondaryPosition;
-        private bool inDeadZone;
+        private bool inDeadZone, isActiveTouchATap;
         /// <summary>
         /// Process touch input. Uses 2D colliders to define screen 'zones'.
         /// Clears state and recalculates with current primary and secondary touch input locations.
@@ -79,36 +80,53 @@ namespace EatOrDie
             primaryPosition = Vector2.one * 100;
             secondaryPosition = Vector2.one * 100;
             
-            
             // Get all currently active fingers touching the screen.
             activeFingers = Touch.activeFingers;
 
+            isActiveTouchATap = false;
             // Calculate primary fingers state
-            if (activeFingers.Count >= 1)
+            if (activeFingers.Count >= 1 )
             {
-                primaryPosition = cam.ScreenToWorldPoint(activeFingers[0].screenPosition);
+                isActiveTouchATap = activeFingers[0].currentTouch.isTap;
+                primaryTState.Tap = isActiveTouchATap;
+                primaryTState.TapPosition = cam.ScreenToWorldPoint(activeFingers[0].currentTouch.screenPosition);
                 
-                inDeadZone = false;
-                inDeadZone = deadZone.OverlapPoint(primaryPosition);
-                
-                primaryTState.Forwards = forward.OverlapPoint(primaryPosition) && !inDeadZone;
-                primaryTState.Backwards = backward.OverlapPoint(primaryPosition) && !inDeadZone;
-                primaryTState.Jump = jump.OverlapPoint(primaryPosition) && !inDeadZone;
-                primaryTState.Duck = duck.OverlapPoint(primaryPosition) && !inDeadZone;
+                var pressTime = activeFingers[0].currentTouch.time - activeFingers[0].currentTouch.startTime;
+                if (pressTime > 0.05f)
+                {
+                    primaryPosition = cam.ScreenToWorldPoint(activeFingers[0].screenPosition);
+
+                    inDeadZone = false;
+                    inDeadZone = deadZone.OverlapPoint(primaryPosition);
+
+                    primaryTState.Forwards = forward.OverlapPoint(primaryPosition) && !inDeadZone;
+                    primaryTState.Backwards = backward.OverlapPoint(primaryPosition) && !inDeadZone;
+                    primaryTState.Jump = jump.OverlapPoint(primaryPosition) && !inDeadZone;
+                    primaryTState.Duck = duck.OverlapPoint(primaryPosition) && !inDeadZone;
+                }
             }
             
+            isActiveTouchATap = false;
             // Calculate secondary finger state
             if (activeFingers.Count >= 2)
             {
-                secondaryPosition = cam.ScreenToWorldPoint(activeFingers[1].screenPosition);
-
-                inDeadZone = false;
-                inDeadZone = deadZone.OverlapPoint(secondaryPosition);
+                isActiveTouchATap = activeFingers[1].currentTouch.isTap;
+                secondTState.Tap = isActiveTouchATap;
+                secondTState.TapPosition = cam.ScreenToWorldPoint(activeFingers[1].currentTouch.screenPosition);
                 
-                secondTState.Forwards = forward.OverlapPoint(secondaryPosition) && !inDeadZone;
-                secondTState.Backwards = backward.OverlapPoint(secondaryPosition) && !inDeadZone;
-                secondTState.Jump = jump.OverlapPoint(secondaryPosition) && !inDeadZone;
-                secondTState.Duck = duck.OverlapPoint(secondaryPosition) && !inDeadZone;
+                var pressTime = activeFingers[1].currentTouch.time - activeFingers[1].currentTouch.startTime;
+                if (pressTime > 0.05f)
+                {
+                    secondaryPosition = cam.ScreenToWorldPoint(activeFingers[1].screenPosition);
+
+                    inDeadZone = false;
+                    inDeadZone = deadZone.OverlapPoint(secondaryPosition);
+
+                    secondTState.Forwards = forward.OverlapPoint(secondaryPosition) && !inDeadZone;
+                    secondTState.Backwards = backward.OverlapPoint(secondaryPosition) && !inDeadZone;
+                    secondTState.Jump = jump.OverlapPoint(secondaryPosition) && !inDeadZone;
+                    secondTState.Duck = duck.OverlapPoint(secondaryPosition) && !inDeadZone;
+                }
             }
             
             // Combine the primary and secondary states, making sure the primary state supersedes
@@ -117,6 +135,13 @@ namespace EatOrDie
             tState.Backwards = primaryTState.Backwards || (secondTState.Backwards && !primaryTState.Forwards);
             tState.Jump = primaryTState.Jump || secondTState.Jump;
             tState.Duck = primaryTState.Duck || secondTState.Duck;
+            tState.Tap = primaryTState.Tap || secondTState.Tap;
+            tState.TapPosition = !tState.Tap
+                ? Vector2.one * -10000
+                : primaryTState.Tap
+                    ? primaryTState.TapPosition
+                    : secondTState.TapPosition;
+            Debug.Log(tState.ToString());
         }
 
         #endregion
@@ -148,9 +173,9 @@ namespace EatOrDie
             mState.Jump = jump.OverlapPoint(mouseWorldPosition) && !inDeadZone;
             mState.Duck = duck.OverlapPoint(mouseWorldPosition) && !inDeadZone;
         }
-
-        #endregion
         
+        #endregion
+
         #region Keyboard Processing
         
         // Avoid redundant declarations, cache values in these variables.
@@ -187,6 +212,9 @@ namespace EatOrDie
             state.Jump = tState.Jump || mState.Jump || kState.Jump;
             state.Duck = tState.Duck || mState.Duck ||kState.Duck;
             state.Escape = kState.Escape;
+            
+            state.Tap = tState.Tap;
+            state.TapPosition = tState.TapPosition;
         }
         
         #endregion
@@ -196,7 +224,7 @@ namespace EatOrDie
         {
             ProcessTouch();
             ProcessKeyboard();
-            ProcessMouse();
+            //ProcessMouse();
             CombineAllInput();
              
             if (state.Forward) 
@@ -207,6 +235,10 @@ namespace EatOrDie
                 Jump();
             if (state.Duck) 
                 Duck();
+            
+            if (state.Tap)
+                Tap(state.TapPosition);
+            
             if (state.Escape)
                 Application.Quit();
         }
@@ -214,29 +246,42 @@ namespace EatOrDie
         public event EventHandler OnForward;
         protected virtual void MoveForward()
         {
-            EventHandler handler = OnForward;
+            var handler = OnForward;
             handler?.Invoke(this, EventArgs.Empty);
         }
         
         public event EventHandler OnBackward;
         protected virtual void MoveBackward()
         {
-            EventHandler handler = OnBackward;
+            var handler = OnBackward;                  
             handler?.Invoke(this, EventArgs.Empty);
         }
         
         public event EventHandler OnJump;
         protected virtual void Jump()
         {
-            EventHandler handler = OnJump;
+            var handler = OnJump;
             handler?.Invoke(this, EventArgs.Empty);
         }
         
         public event EventHandler OnDuck;
         protected virtual void Duck()
         {
-            EventHandler handler = OnDuck;
+            var handler = OnDuck;
             handler?.Invoke(this, EventArgs.Empty);
         }
+
+        public event EventHandler<TapPositionEventArgs> OnTap;
+        protected virtual void Tap(Vector2 tp)
+        {
+            var handler = OnTap;
+            handler?.Invoke(this, new TapPositionEventArgs { TapPosition = tp});
+            //Debug.Log($"Tapped: {tp}");
+        }
+    }
+
+    public class TapPositionEventArgs : EventArgs
+    {
+        public Vector2 TapPosition;
     }
 }

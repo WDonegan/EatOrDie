@@ -137,9 +137,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputManager: {fileID: 0}
   groundCheck: {fileID: 5595353453123450247}
-  grouncLayer:
+  groundLayer:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 0
   airControl: 1
   smoothing: 0.05
   moveForce: 200
@@ -443,7 +443,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8793570365199560381}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 1.32, z: 0}
+  m_LocalPosition: {x: -0, y: 1.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5595353451796302093}
@@ -493,10 +493,10 @@ SpriteShapeRenderer:
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
   m_Sprites:
-  - {fileID: 21300000, guid: 5b342473bc7b8344184b409211e65232, type: 3}
+  - {fileID: 21300000, guid: c58a63edc320d18438a200545b081d29, type: 3}
   m_LocalAABB:
-    m_Center: {x: 0.6027778, y: 0, z: -0.00005}
-    m_Extent: {x: 0.95277774, y: 0.2916667, z: 0.00005}
+    m_Center: {x: 0.1896166, y: 0.12502477, z: -0.00005}
+    m_Extent: {x: 0.306517, y: 0.26269257, z: 0.00005}
 --- !u!114 &7700270256174452559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -521,7 +521,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 1
-    - position: {x: 1, y: 0, z: 0}
+    - position: {x: 0.125, y: 0.075, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -558,6 +558,6 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.57, y: 1.38}
+  m_Offset: {x: 0.275, y: 0.175}
   serializedVersion: 2
-  m_Radius: 0.21
+  m_Radius: 0.15

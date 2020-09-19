@@ -1,4 +1,6 @@
-﻿namespace EatOrDie.InputActions
+﻿using UnityEngine;
+
+namespace EatOrDie.InputActions
 {
     public struct CustomTouchState
     {
@@ -6,6 +8,8 @@
         public bool Backwards;
         public bool Forwards;
         public bool Duck;
+        public bool Tap;
+        public Vector2 TapPosition;
 
         public void Clear()
         {
@@ -13,8 +17,10 @@
             Backwards = false;
             Forwards = false;
             Duck = false;
+            Tap = false;
+            TapPosition = Vector2.zero;
         }
 
-        public new string ToString() => $"F:{Forwards} B:{Backwards} J:{Jump} D:{Duck}";
+        public new string ToString() => $"F:{Forwards} B:{Backwards} J:{Jump} D:{Duck} T:{Tap} TP:{TapPosition}";
     }
 }

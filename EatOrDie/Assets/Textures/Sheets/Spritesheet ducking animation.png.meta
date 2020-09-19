@@ -29,6 +29,75 @@ TextureImporter:
   - first:
       213: 4918993124484258269
     second: duck_3C
+  - first:
+      213: 3509301659113965710
+    second: Ducking_Skinny_A
+  - first:
+      213: -129624202662940813
+    second: Ducking_Skinny_B
+  - first:
+      213: -4293237369292508117
+    second: Ducking_Skinny_C
+  - first:
+      213: -1014323679274158370
+    second: Spritesheet ducking animation_3
+  - first:
+      213: -7594168541535734503
+    second: Ducking_Normal_A
+  - first:
+      213: -1456650080241782173
+    second: Ducking_Normal_B
+  - first:
+      213: -7809610973842892008
+    second: Ducking_Normal_C
+  - first:
+      213: 5301305901312742208
+    second: Spritesheet ducking animation_7
+  - first:
+      213: -9194950428989890862
+    second: Ducking_Fat_A
+  - first:
+      213: 3233426187378044893
+    second: Ducking_Fat_B
+  - first:
+      213: -1987635959290733695
+    second: Ducking_Fat_C
+  - first:
+      213: 7574718785937892813
+    second: Spritesheet ducking animation_11
+  - first:
+      213: -443383433971507015
+    second: Ducking_Skinny_A
+  - first:
+      213: -535293606846087319
+    second: Ducking_Skinny_B
+  - first:
+      213: 9027529197170993613
+    second: Ducking_Skinny_C
+  - first:
+      213: -6544402855935428143
+    second: Spritesheet ducking animation_3
+  - first:
+      213: 7861062753794690194
+    second: Ducking_Normal_A
+  - first:
+      213: 8073654055131725944
+    second: Ducking_Normal_B
+  - first:
+      213: 1699891100260196688
+    second: Ducking_Normal_C
+  - first:
+      213: 56072062410133766
+    second: Spritesheet ducking animation_7
+  - first:
+      213: 4918993124484258269
+    second: Ducking_Fat_A
+  - first:
+      213: 4377729984505560792
+    second: Ducking_Fat_B
+  - first:
+      213: -9166301758307995620
+    second: Ducking_Fat_C
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -74,7 +143,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 120
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -162,15 +231,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Duck_1A
+      name: Ducking_Skinny_A
       rect:
         serializedVersion: 2
-        x: 85
-        y: 1535
-        width: 339
-        height: 513
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 46
+        y: 1540
+        width: 433
+        height: 498
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -183,15 +252,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Duck_2A
+      name: Ducking_Skinny_B
       rect:
         serializedVersion: 2
-        x: 586
-        y: 1536
-        width: 364
-        height: 421
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 544
+        y: 1540
+        width: 432
+        height: 497
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -204,15 +273,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Duck_3A
+      name: Ducking_Skinny_C
       rect:
         serializedVersion: 2
-        x: 1113
-        y: 1536
-        width: 339
-        height: 512
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1056
+        y: 1538
+        width: 434
+        height: 498
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -225,36 +294,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Duck_1B
+      name: Ducking_Normal_A
       rect:
         serializedVersion: 2
-        x: 34
-        y: 1023
-        width: 435
-        height: 511
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d9bae8b64c9d25a0800000000000000
-      internalID: -6544402855935428143
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Duck_2B
-      rect:
-        serializedVersion: 2
-        x: 563
-        y: 1026
-        width: 411
-        height: 508
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 0
+        y: 1028
+        width: 507
+        height: 475
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -267,15 +315,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Duck_3B
+      name: Ducking_Normal_B
       rect:
         serializedVersion: 2
-        x: 1065
-        y: 1023
-        width: 435
-        height: 511
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 506
+        y: 1030
+        width: 506
+        height: 478
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -288,15 +336,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Duck_1C
+      name: Ducking_Normal_C
       rect:
         serializedVersion: 2
-        x: 1
-        y: 514
-        width: 504
-        height: 460
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1016
+        y: 1032
+        width: 508
+        height: 474
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -309,36 +357,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Duck_2C
+      name: Ducking_Fat_A
       rect:
         serializedVersion: 2
-        x: 515
+        x: 1
         y: 514
-        width: 502
-        height: 390
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 60197c16e3537c000800000000000000
-      internalID: 56072062410133766
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: duck_3C
-      rect:
-        serializedVersion: 2
-        x: 1021
-        y: 513
-        width: 504
-        height: 460
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 503
+        height: 391
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -346,6 +373,48 @@ TextureImporter:
       bones: []
       spriteID: dd9197d4f26c34440800000000000000
       internalID: 4918993124484258269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ducking_Fat_B
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 514
+        width: 504
+        height: 396
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8deb7090a32d0cc30800000000000000
+      internalID: 4377729984505560792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ducking_Fat_C
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 519
+        width: 503
+        height: 393
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c107300bd11cac080800000000000000
+      internalID: -9166301758307995620
       vertices: []
       indices: 
       edges: []

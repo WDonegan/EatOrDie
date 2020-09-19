@@ -187,7 +187,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Normal_Duck
-  m_Speed: 0.05
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -9193200650280534118}
@@ -573,7 +573,7 @@ AnimatorStateMachine:
     m_Position: {x: 300, y: 160, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1988747836864302075}
-    m_Position: {x: 800, y: 460, z: 0}
+    m_Position: {x: 860, y: 460, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6935383538265143482}
     m_Position: {x: 800, y: 320, z: 0}
@@ -585,7 +585,7 @@ AnimatorStateMachine:
     m_Position: {x: 300, y: 320, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -2263137105630086164}
-    m_Position: {x: 500, y: 460, z: 0}
+    m_Position: {x: 570, y: 440, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: 7902207099666214190}

@@ -147,6 +147,14 @@ public class @InputMaster : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Target"",
+                    ""type"": ""Button"",
+                    ""id"": ""64288777-5d66-498b-a428-4d98926c3790"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -182,6 +190,17 @@ public class @InputMaster : IInputActionCollection, IDisposable
                     ""action"": ""MousePosition"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""61f3ee6f-2365-4d8b-bc48-2543c84278d6"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": ""Tap"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Target"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -199,6 +218,7 @@ public class @InputMaster : IInputActionCollection, IDisposable
         m_Touch_Primary = m_Touch.FindAction("Primary", throwIfNotFound: true);
         m_Touch_LeftMouse = m_Touch.FindAction("LeftMouse", throwIfNotFound: true);
         m_Touch_MousePosition = m_Touch.FindAction("MousePosition", throwIfNotFound: true);
+        m_Touch_Target = m_Touch.FindAction("Target", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -308,6 +328,7 @@ public class @InputMaster : IInputActionCollection, IDisposable
     private readonly InputAction m_Touch_Primary;
     private readonly InputAction m_Touch_LeftMouse;
     private readonly InputAction m_Touch_MousePosition;
+    private readonly InputAction m_Touch_Target;
     public struct TouchActions
     {
         private @InputMaster m_Wrapper;
@@ -315,6 +336,7 @@ public class @InputMaster : IInputActionCollection, IDisposable
         public InputAction @Primary => m_Wrapper.m_Touch_Primary;
         public InputAction @LeftMouse => m_Wrapper.m_Touch_LeftMouse;
         public InputAction @MousePosition => m_Wrapper.m_Touch_MousePosition;
+        public InputAction @Target => m_Wrapper.m_Touch_Target;
         public InputActionMap Get() { return m_Wrapper.m_Touch; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -333,6 +355,9 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 @MousePosition.started -= m_Wrapper.m_TouchActionsCallbackInterface.OnMousePosition;
                 @MousePosition.performed -= m_Wrapper.m_TouchActionsCallbackInterface.OnMousePosition;
                 @MousePosition.canceled -= m_Wrapper.m_TouchActionsCallbackInterface.OnMousePosition;
+                @Target.started -= m_Wrapper.m_TouchActionsCallbackInterface.OnTarget;
+                @Target.performed -= m_Wrapper.m_TouchActionsCallbackInterface.OnTarget;
+                @Target.canceled -= m_Wrapper.m_TouchActionsCallbackInterface.OnTarget;
             }
             m_Wrapper.m_TouchActionsCallbackInterface = instance;
             if (instance != null)
@@ -346,6 +371,9 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 @MousePosition.started += instance.OnMousePosition;
                 @MousePosition.performed += instance.OnMousePosition;
                 @MousePosition.canceled += instance.OnMousePosition;
+                @Target.started += instance.OnTarget;
+                @Target.performed += instance.OnTarget;
+                @Target.canceled += instance.OnTarget;
             }
         }
     }
@@ -362,5 +390,6 @@ public class @InputMaster : IInputActionCollection, IDisposable
         void OnPrimary(InputAction.CallbackContext context);
         void OnLeftMouse(InputAction.CallbackContext context);
         void OnMousePosition(InputAction.CallbackContext context);
+        void OnTarget(InputAction.CallbackContext context);
     }
 }

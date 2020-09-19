@@ -22,7 +22,7 @@ namespace EatOrDie
 
         [SerializeField] private InputManager inputManager;
         [SerializeField] private Transform groundCheck;
-        [SerializeField] private LayerMask grouncLayer;
+        [SerializeField] private LayerMask groundLayer;
         [SerializeField] private bool airControl;
         [SerializeField, Range(0, 0.3f)] private float smoothing = 0.05f;
         [SerializeField] private float moveForce = 200f;
@@ -32,12 +32,14 @@ namespace EatOrDie
         private Transform tf;
         private Rigidbody2D rb;
         private Animator animator;
+        private SpriteShapeTest shapeTest;
 
         private void Awake()
         {
             tf = GetComponent<Transform>();
             rb = GetComponent<Rigidbody2D>();
             animator = GetComponent<Animator>();
+            shapeTest = GetComponentInChildren<SpriteShapeTest>();
         }
 
         #region Input Callbacks
@@ -50,7 +52,8 @@ namespace EatOrDie
             inputManager.OnBackward += BackwardMoveAction;
             inputManager.OnJump += JumpAction;
             inputManager.OnDuck += DuckAction;
-            
+            inputManager.OnTap += AttackAction;
+
         }
         private void OnDisable()
         {
@@ -60,13 +63,16 @@ namespace EatOrDie
             inputManager.OnBackward -= BackwardMoveAction;
             inputManager.OnJump -= JumpAction;
             inputManager.OnDuck -= DuckAction;
+            inputManager.OnTap -= AttackAction;
         }
+        
         private void ForwardFlipAction(object s, EventArgs e) { if (!facingForward) Flip(); }
         private void BackwardFlipAction(object s, EventArgs e) { if (facingForward) Flip(); }
         private void ForwardMoveAction(object s, EventArgs e) { iHorizontalDirection = 1; }
         private void BackwardMoveAction(object s, EventArgs e) { iHorizontalDirection = -1; }
         private void JumpAction(object s, EventArgs e) { if (grounded) iJump = true; }
         private void DuckAction(object s, EventArgs e) { ducking = true; playDuckAnimation = true; }
+        private void AttackAction(object s, TapPositionEventArgs e) => shapeTest.Attack(e.TapPosition);
 
         #endregion
         
@@ -148,7 +154,7 @@ namespace EatOrDie
         /// </summary>
         private void GroundCheck()
         {
-            otherColliders = Physics2D.OverlapCircleAll(groundCheck.position, GroundedRadius, grouncLayer);
+            otherColliders = Physics2D.OverlapCircleAll(groundCheck.position, GroundedRadius, groundLayer);
             grounded = false;
             
             foreach (var otherCollider in otherColliders)
